@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.djmood.Library">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/navigate_now_playing"
+            style="@style/menu_text"
+            android:paddingLeft="8dp"
+            android:text="@string/navigation_now_playing" />
+
+        <TextView
+            android:id="@+id/navigate_shuffle"
+            style="@style/menu_text"
+            android:text="@string/navigation_shuffle" />
+
+        <TextView
+            android:id="@+id/navigate_library"
+            style="@style/menu_text"
+            android:paddingRight="8dp"
+            android:text="@string/navigation_library" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <ImageView
+            style="@style/library_select"
+            android:src="@drawable/track"
+            tools:contentDescription="trackImage" />
+
+        <TextView
+            style="@style/selection_buttons"
+            android:layout_weight="1"
+            android:text="@string/track" />
+
+        <ImageView
+            style="@style/library_select"
+            android:src="@drawable/album"
+            tools:contentDescription="trackImage" />
+
+        <TextView
+            style="@style/selection_buttons"
+            android:layout_weight="1"
+            android:text="@string/album" />
+
+        <ImageView
+            style="@style/library_select"
+            android:src="@drawable/favorite"
+            tools:contentDescription="trackImage" />
+
+        <TextView
+            style="@style/selection_buttons"
+            android:layout_weight="1"
+            android:text="@string/favorite" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:text="@string/library_explanation" />
+
+
+</LinearLayout>

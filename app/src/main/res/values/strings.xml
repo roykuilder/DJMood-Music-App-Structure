@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DJMood</string>
+    <string name="navigation_now_playing">Now Playing</string>
+    <string name="navigation_library">Library</string>
+    <string name="navigation_shuffle">Shuffle</string>
+    <string name="track">track</string>
+    <string name="album">album</string>
+    <string name="favorite">favorite</string>
+
+    <string name="library_explanation">- This will be a ListView filled by the available songs.\n
+        - When clicked the song will be added to the current playlist \n
+        - The track, album and favorite button select the songs bases on these catacories \n
+        - An ArrayAdapter will fill this space to keep the system requirements low. \n
+        - The searchbutton will inflate a searchfield.</string>
+
+    <string name="shuffle_explanation">- This will be a ListView filled with the current playlist. \n
+        - The user will be able to change the order of the songs listed in here. \n
+        - An ArrayAdapter will fill this space to keep the system requirements low. \n</string>
+
+    <string name="now_playing_explanation">- This Activity will hold the information on the current song. \n
+    - It will allow the user to control the playback style. e.g shuffle, repeat, repeat all. \n
+    </string>
+</resources>
